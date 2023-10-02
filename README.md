@@ -4,13 +4,13 @@ This is a expressJS project that uses pug, or jade, to serve static files to the
 
 # How to use
 
-Once downloaded,run
+Once downloaded, run command from directory
 
     npm install
 
-and then
+then
 
-    npm run start to use.
+    npm run start
 
 Then visit the url http://localhost:3000
 
