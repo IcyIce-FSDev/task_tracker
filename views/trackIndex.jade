@@ -1,0 +1,17 @@
+extends trackLayout
+
+block content
+  form(onsubmit="handleSubmit(event)")
+    h2 Task Form
+    div.cont
+      label(for="taskName", required) Name of Task:
+      textarea(name="taskName")
+    div.cont
+      label(for="startDate") Start Date:
+      input(type="date", name="startDate", id="startDateInput")
+    div.cont 
+      label(for="startTime") Start Time:
+      input(type="time", name="startTime", id="startTimeInput")
+    button(type="submit") Submit
+
+

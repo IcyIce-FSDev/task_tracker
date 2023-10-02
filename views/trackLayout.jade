@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/track.css')
+    script(src='/javascripts/formSubmit.js')
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+  body
+    header
+      h1 #{title}
+      a(href="/view") Return to View List
+    block content
+    footer.home
+      a(href="/") ← Home

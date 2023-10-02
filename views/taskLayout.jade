@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/task.css')
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+    script(src="/javascripts/formEdit.js")
+  body
+  header
+    h1 #{title}
+    a(href="/view") View List
+  block content
+  footer.home
+    a(href="/") ← Home

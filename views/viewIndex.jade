@@ -1,0 +1,36 @@
+extends viewLayout
+
+block content
+ main
+  table
+   thead
+    th Task
+    th Start Date
+    th Start Time
+    th End Date
+    th End Time
+    th Duration
+    th Controls
+   tbody
+    each task in tasks
+     tr(id= task.id)
+      td= task.name
+      td= task.startDate
+      td= task.startTime
+      if task.active
+       td= ""
+       td= ""
+      else 
+       td= task.endDate
+       td= task.endTime 
+      if !task.active
+       td= task.duration
+      else
+       td.duration(data=[task.startDate, task.startTime])= "Calculating..."
+      td.buttongrp
+        if task.active
+            button(data-task=task, onclick="stop(this)") Stop
+        button(data-task=task, onclick="del(this)") Delete
+        button(data-task=task, onclick="edit(this)") Edit
+
+ 

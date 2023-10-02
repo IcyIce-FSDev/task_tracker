@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/view.css')
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+  body
+  header
+    h1 #{title}
+    a(href="/track") Track New Task
+  block content
+  footer.home
+    a(href="/") ← Home
+script(src='/javascripts/table.js')

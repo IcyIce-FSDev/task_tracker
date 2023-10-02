@@ -1,0 +1,29 @@
+extends taskLayout
+
+block content
+  form(onsubmit="handleSubmit(event)")
+    h2 Task Form
+    input(type="hidden", name="id", value=task.id)
+    div.cont
+      label(for="taskName") Name of Task:
+      //- Set default value for taskName
+      textarea(name="taskName")= task.name
+    div.cont
+      label(for="active") Active:
+      input(type="checkbox", name="active", checked=task.active) // Set default value for active
+    div.cont
+      label(for="startDate") Start Date:
+      input(type="date", name="startDate", value=task.startDate) // Set default value for startDate
+      br      
+      label(for="startTime") Start Time:
+      input(type="time", name="startTime", value=task.startTime) // Set default value for startTime
+    div.cont.endDateSection
+        label(for="endDate") End Date:
+        input(type="date", name="endDate", value=task.endDate)
+        br
+        label(for="endTime") End Time:
+        input(type="time", name="endTime", value=task.endTime)
+    div.btngrp  
+      button(type="submit", data={task}) Submit
+      button(type="cancel") Cancel
+
