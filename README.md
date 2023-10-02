@@ -4,7 +4,15 @@ This is a expressJS project that uses pug, or jade, to serve static files to the
 
 # How to use
 
-    Once downloaded, run npm install and then npm run start to use. Then visit the url http://localhost:3000
+Once downloaded,run
+
+    npm install
+
+and then
+
+    npm run start to use.
+
+Then visit the url http://localhost:3000
 
 # Technologies used
 
