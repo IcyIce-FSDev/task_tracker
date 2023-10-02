@@ -1,6 +1,6 @@
 # Task Tracker
 
-    This is a expressJS project that uses pug, or jade, to serve static files to the client from the server. This project has 4 separate pages and functions that go with each. It uses a file based storage to hold and retreive the tasks. This is meant for local use only. Further expansion may include login page and register page. As well as different methods to sort dates
+This is a expressJS project that uses pug, or jade, to serve static files to the client from the server. This project has 4 separate pages and functions that go with each. It uses a file based storage to hold and retreive the tasks. This is meant for local use only. Further expansion may include login page and register page. As well as different methods to sort dates
 
 # How to use
 
